@@ -25,7 +25,11 @@ let currentDate = `${day} ${month}, ${year}`;
 const dateForPDFName = `${day}${month.slice(0, 3).toUpperCase()}${year}`;
 
 let datePlaceholder = document.getElementById("current-date");
-datePlaceholder.innerText = currentDate;
+
+datePlaceholder.value = `${year}-${today
+  .getMonth()
+  .toString()
+  .padStart(2, "0")}-${day}`;
 
 const formatPhoneNumber = () => {
   let phoneNumber = document.getElementById("clientPhone").value;
