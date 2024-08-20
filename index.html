@@ -26,8 +26,8 @@
             class="d-flex flex-column flex-sm-row justify-content-between border-bottom mb-3"
           >
             <h3 class="mb-0">Client Info</h3>
-            <h3 class="mb-0 d-inline-flex">
-              <label for="current-date">Date: </label>
+            <h3 class="mb-2 d-inline-flex">
+              <label for="current-date" class="me-3">Date:</label>
               <input type="date" id="current-date" class="form-control" />
             </h3>
           </div>
@@ -50,12 +50,20 @@
                 maxlength="16"
               />
             </div>
-            <div class="input-section w-100 w-md-25">
+            <div class="input-section w-100 w-md-25 me-md-3">
               <input
                 type="email"
                 placeholder="email"
                 class="form-control"
                 id="clientEmail"
+              />
+            </div>
+            <div class="input-section w-100 w-md-25">
+              <input
+                type="text"
+                placeholder="address"
+                class="form-control"
+                id="clientAddress"
               />
             </div>
           </div>
@@ -71,6 +79,14 @@
             <div class="w-100 w-md-25 me-3">
               <label for="newName" class="form-label">New name</label>
               <input type="text" id="newName" class="form-control" />
+            </div>
+            <div class="w-100 w-md-25 me-3">
+              <label for="breed" class="form-label">Breed</label>
+              <input type="text" id="breed" class="form-control" />
+            </div>
+            <div class="w-100 w-md-25 me-3">
+              <label for="age" class="form-label">Age</label>
+              <input type="text" id="age" class="form-control" />
             </div>
             <div class="w-100 w-md-25">
               <label for="dateAdopted" class="form-label">Date Adopted</label>
@@ -103,6 +119,16 @@
               name="recommendations"
               id="recommendations"
               placeholder="List out recommendations given..."
+              class="form-control"
+            ></textarea>
+          </div>
+
+          <div class="input-section">
+            <label for="notes" class="form-label">Notes</label>
+            <textarea
+              name="notes"
+              id="notes"
+              placeholder="Notes..."
               class="form-control"
             ></textarea>
           </div>
